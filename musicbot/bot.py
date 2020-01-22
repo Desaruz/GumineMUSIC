@@ -1121,7 +1121,7 @@ class MusicBot(discord.Client):
         """Provides a basic template for embeds"""
         e = discord.Embed()
         e.colour = 7506394
-        e.set_footer(text='Developed by Desarus ({})'.format(BOTVERSION), icon_url='https://i.imgur.com/gFHBoZA.png')
+        e.set_footer(text='Developed by Desarus ({})'.format(BOTVERSION), icon_url='https://cdn.discordapp.com/avatars/669056189530898443/2d7099c533e8d095203416a850a51e46.png?size=128')
         e.set_author(name=self.user.name, url='https://github.com/Just-Some-Bots/MusicBot', icon_url=self.user.avatar_url)
         return e
 
