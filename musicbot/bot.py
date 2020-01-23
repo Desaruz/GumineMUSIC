@@ -2550,7 +2550,7 @@ class MusicBot(discord.Client):
         Will not properly load new dependencies or file updates unless fully shutdown
         and restarted.
         """
-        await self.safe_send_message(channel, "\N{WAVING HAND SIGN} Restarting.".format(BOTVERSION)
+        await self.safe_send_message(channel, "\N{WAVING HAND SIGN} Restarting."
 
         player = self.get_player_in(channel.guild)
         if player and player.is_paused:
