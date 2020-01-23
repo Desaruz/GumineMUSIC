@@ -3035,3 +3035,5 @@ class MusicBot(discord.Client):
             if vc.guild == guild:
                 return vc
         return None
+    async def cmd_uptime(self, channel):
+        currentuptime = uptime - time.time()
