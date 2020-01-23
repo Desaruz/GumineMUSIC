@@ -2626,7 +2626,7 @@ class MusicBot(discord.Client):
 
         return Response(data, codeblock='py')
 
-    @dev_only
+    @owner_only
     async def cmd_debug(self, message, _player, *, data):
         codeblock = "```py\n{}\n```"
         result = None
@@ -3035,5 +3035,3 @@ class MusicBot(discord.Client):
             if vc.guild == guild:
                 return vc
         return None
-    async def cmd_uptime(self, channel):
-        currentuptime = uptime - time.time()
